@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+/*_____NAV BAR_____*/
+#header{
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+#Menu{
+    display: flex;
+    gap:.5rem;
+}
+.InternalLinks{
+    color: black;
+}
+#GetADemo{
+    display: none;
+}
+#GetADemo{
+    color:#2F70FE;
+}
+#Menu a{
+    padding: .5rem;
+}
+#button_Header{
+    display: none;
+}
+#ToolBar{
+    display: none;
+}
+#button_Header{
+    display: block;
+    color:#2F70FE;
+    background-color: white;
+    border:#2F70FE;
+    border: 0.02rem #2F70FE solid;
+    height: 2.5rem;
+    width: 8rem;
+}
+#button_Header:hover{
+    display: block;
+    color:white;
+    background-color: #2F70FE;
+    border:#2F70FE;
+    border: 0.02rem #2F70FE solid;
+    height: 2.5rem;
+    width: 8rem;
+}
+
+@media (max-width: 768px) {
+    #ToolBar{
+        display: flex;
+    }
+    #button_Header{
+        display: none;
+    }
+    #Menu{
+        display: none;
+        position: absolute;
+        width: 100%;
+        top:70px;
+        right: 0px;
+        background-color: white;
+        height: calc(90vh - 70px);
+        text-align: center;
+        
+    }
+    #GetADemo{
+        display: block;
+    }
+    #Nav2.active #Menu{
+        display: block;
+        z-index: (1000);
+    }
+    #Menu li{
+        padding: 2.5rem 0;
+        margin: 0 rem;
+        font-size: 36px;
+    }
+    #Hamburguer{
+        border-top: 2px solid;
+        width: 27px;
+    }
+    #Hamburguer::after, #Hamburguer::before{
+        content: '';
+        display: block;
+        width: 
+        1,88%;
+        height: 2px;
+        background: black;
+        margin-top: 5px;
+        position: relative;
+    }
+    #Nav2.active #Hamburguer{
+        border-top: transparent;
+    }
+    #Nav2.active #Hamburguer::before{
+        transform: rotate(135deg);
+    }
+    #Nav2.active #Hamburguer::after{
+        transform: rotate(-135deg);
+        top:-7px;
+    }
+}
+/*_____FIRST SECTION_____*/
+#FirstSection{
+    background-color: #2F70FE;
+    padding: 15%;
+    text-align: center;
+}
+.image{
+    display: none;
+}
+h2{
+    font-size: 200%;
+    color: white;
+    padding-bottom: 10%;
+}
+#button_FirstSection{
+    background-color: black;
+    color: white;
+    padding:5%;
+    width: 60%;
+    font-family: 'Raleway';
+}
+#button_FirstSection:hover{
+    background-color: rgb(17, 16, 16);
+}
+#c{
+    color: white;
+    width:100%;
+    font-size: 100%;
+    padding-bottom: 5%;
+    font-size: 1rem;
+}
+/*_____SECOND SECTION_____*/
+#SecondSection{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 7%;
+    gap: 6rem;
+    align-items: center;
+    background-color: #00FF8514;
+}
+#ListSellGrow{
+    background-color: #00FF8514;
+    text-align: center;
+}
+#SecondSection_Text{
+    color: black;
+}
+#ListSellGrow{
+    font-weight: lighter;
+    font-size: 2rem;
+}
+.Box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    gap: 2rem;
+    color: #000C2D;
+    font-size: 110%;
+    font-weight: 500;
+}
+.SecondSection_Image{
+    width: 40%;
+}
+
+/*_____THIRD SECTION_____*/
+#ThirdSection{
+    display: flex;
+    flex-direction: column;
+    gap:6rem;
+    margin-top:30%;
+    padding: 7%;
+    margin-bottom:10%;
+}
+.ThirdSection_Box{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.ThirdSection_Text{
+    color: #000C2D;
+    font-size: 1rem;
+}
+h1{
+    font-weight: bold;
+    font-size: 1.75rem;
+    text-align: center;
+}
+.Signupnow{
+    background-color: white;
+}
+.DesktopDisplay{
+    width: 100%;
+}
+.ThirdSection_Image{
+    width:90%;
+}
+/*_____FOURTH SECTION_____*/
+footer{
+    background-color: black;
+    color: white;
+}
+#false_footer{
+    background-color: black;
+    color: white;
+    margin-top: 10%;
+    padding: 7%;
+    display: flex;
+    flex-direction: column;
+}
+.BoxClass{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20%;
+    gap:3rem;
+    margin:1.5rem;
+}
+#real_footer{
+    text-align: center;
+}
+
+/*_____HAMBURGUER MENU_____*/
+@media (min-width: 768px)
+{
+/*_____NAV BAR_____*/
+#button_Header{
+    display:block;
+}
+#header{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+#Menu{
+    align-items: center;
+}
+/*_____FIRST SECTION_____*/
+.image{
+    display: flex;
+}
+#FirstSection{
+    padding-bottom: 0%;
+    padding:0%;
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+#button_FirstSection{
+    padding:1rem 1.563rem;
+    width: max-content;
+    font-size: 1.2rem;
+    height: max-content;
+    margin-top: 10px;
+}
+#TwoImage{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+h2{
+    font-size: 4rem;
+    width: 
+    789px;
+    padding:0%;
+    width: 45.35%;
+}
+#c{
+    width: 42.01%;
+    font-size: 1.2rem;
+    padding-bottom:0%;
+    display: flex;
+    justify-content: space-around;
+}
+/*_____SECOND SECTION_____*/
+#ListSellGrow{
+    background-color: #00FF8514;
+    padding-top: 5%;
+    font-weight: normal;
+}
+#SecondSection{
+    flex-direction: row;
+    justify-content: center;
+}
+/*_____THIRD SECTION_____*/
+#ThirdSection{
+    justify-content: space-between;
+    margin-top:5%;
+    gap:10rem;
+}
+.ThirdSection_Box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1rem;
+    width: 23.688rem;
+}
+.header_novo{
+    text-align: left ;
+    width: 25.563rem;
+}
+.ThirdSection_Image{
+    width:30%;
+}
+.Autopilot{
+    width: 20%;
+}
+
+.DesktopDisplay{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+.Reverse{
+    flex-direction: row;
+}
+/*_____FOURTH SECTION_____*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4%;;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+#false_footer{
+    width: 51.56%;
+    gap: 4rem;
+    display: flex;
+    flex-direction: row;
+    padding-bottom:3%;
+    margin-top: 0.6%;
+    padding-top:2%;
+}
+.BoxClass{
+    gap:6rem;
+    font-size: 1.1rem;
+    width: 51,56%;
+}
+}
